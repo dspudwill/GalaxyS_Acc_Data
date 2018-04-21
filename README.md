@@ -1,4 +1,4 @@
-# GalaxyS_Acc_Data README File
+# **GalaxyS_Acc_Data README File**
 Author: Dylan Pudwill
 
 **Project Summary:** Retrieve some untidy Samsung Galaxy S Smartphone accelerometer data. The data had to be cleaned and organized before being summarized into a tidy data set that I called `tidyTable`
@@ -6,12 +6,12 @@ A full description of the data can be found [here](http://archive.ics.uci.edu/ml
 
 ## Repo Table of Contents
 
--README.md (your are here!)
-  -Summary of the repo and organization of the project
--CodeBook.md
-  -Overview of original raw data as well as `tidyTable` variables and units
--run_analysis.R
-  -R script used to process raw data and create `tidyTable` dataset.
+- README.md (your are here!)
+  - Summary of the repo and organization of the project
+- CodeBook.md
+  - Overview of original raw data as well as `tidyTable` variables and units
+- run_analysis.R
+  - R script used to process raw data and create `tidyTable` dataset.
 
 # Summary of Galaxy S Smartphone Accelerometer Data and Analysis
 

@@ -59,12 +59,12 @@ This is a summary of all variables to help you read through the script if need b
 *NOTE: Many of the following variables have X, Y, and Z directions. I will only describe the X direction and leave a note to remind you there are two more variables for Y and Z directions as well. e.g. `tBodyAcc.mean.X_avg` will describe `tBodyAcc.mean.Y_avg` and `tBodyAcc.mean.Z_avg`*
 
 1. `subject_id`: id value for each individual in the experiment.
-  - **Range:**1:30
-  - **Type:**`numeric`
+  - **Range:** 1:30
+  - **Type:** `numeric`
 
 2. `activity`: character string of activities an individual can preform during the experiment.
   - **Range/Category:** WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-  - **Type:**character
+  - **Type:** character
 
 *all variables from 3 - 81 are of type `numeric`*
 
