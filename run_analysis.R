@@ -124,7 +124,7 @@ tidyTable <- df %>%
     summarise_at(.vars = names(.)[3:81], .funs = c(avg="mean"))
 
 ##outputing the tidy data to 'tidyTable.txt' to the current directory
-write.table(tidyTable, "tidyTable.txt", sep="\t")
+write.table(tidyTable, "tidyTable.txt", sep="\t", row.names = FALSE)
 
 writeLines("\nYour order is ready! A fresh plate of tidy data is served via 'tidyTable'")
 writeLines("\nOr you can also enjoy your tidy data to go with 'tidyTable.txt")
