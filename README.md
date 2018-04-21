@@ -13,7 +13,7 @@ A full description of the data can be found [here](http://archive.ics.uci.edu/ml
 - run_analysis.R
   - R script used to process raw data and create `tidyTable` dataset.
 
-# Summary of Galaxy S Smartphone Accelerometer Data and Analysis
+## Summary of Galaxy S Smartphone Accelerometer Data and Analysis
 
 ## Data:
 
