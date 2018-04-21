@@ -7,6 +7,8 @@
 ##          5. Creates a tidy data set (tidyTable) grouped by subject_id 
 ##              and activity with averages of all columns
 
+library(dplyr)
+
 ##Downloading file if file "DataCleanProject.zip" does not exist
 dlMeth <- "curl" # sets default for OSX / Linux
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
@@ -21,46 +23,6 @@ if(!file.exists("DataCleanProject.zip")) {
 ##unzipping file and setting working dir
 unzip(zipfile = "DataCleanProject.zip")
 setwd("UCI\ HAR\ Dataset")
-
-##read all files into dif vars
-##want to combine all data from test and train together
-
-##rows of individuals (1-30) and activities (1-6)
-##only extract mean and std dev for each element
-## activities should have descriptive names
-##create new data set with averages of each var, activity and subject
-
-##nrow(subject_train.txt) = nrow(x_train.txt **128 element vectors**)
-##features.txt(561) is titles of each reading in 1 vector (561)
-## e.g. [1]tBodyAcc-mean()-X => X_train.txt_vector[1]
-
-##subject_train.txt provides subject id for 7352 obs
-##y_train.txt provides activity id for 7352 obs
-##X_train.txt has 7352 vectors of length 561 **7352 obs**
-############also have test files
-
-##features.txt labels all 561 values in the vectors from X_train.txt
-##body_acc_x_train.txt has 7352 vectors of length 128 (128 readings per obs)
-##########also have gyro & total // x & y & z
-
-##What I need! ::
-#### subject_train.txt, subject_test.txt (subject id for each obs)
-#### y_train.txt, y_test.txt (activity id for each obs)
-#### X_train.txt, X_test.txt (each obs, includes important data (mean & std))
-#### activity_labels.txt (labels activities from y_train data)
-
-## 1. read data
-## 2. combine data 
-## 3. drop all unimportant data
-## 4. melt data as needed (change vars and clean data)
-## 5. new data table for avg of each var per each activity and subject
-
-##reads X_train.txt as a data frame of 7352 rows and 561 columns
-## each column is 1 feature from feature.txt
-##z should be a combination of both data frames
-##next step is removing unwanted data
-
-library(dplyr)
 
 ##combinded data of test and train sets
 x_train <- read.table("train/X_train.txt")
